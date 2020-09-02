@@ -4,7 +4,6 @@ compiler: clang
 addons:
   packages:
     -libboost-test-dev
-
 script:
 - cmake .
 - cmake --build .
