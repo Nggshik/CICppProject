@@ -6,7 +6,7 @@ compiler: clang
 deploy: 
   provider: script
   script: 
-    - curl -f -T CICppProject-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -unggshik:&BINTRAY_API_KEY \
+    - curl -f -T CICppProject-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -u "nggshik":"&BINTRAY_API_KEY" \
     "https://api.bintray.com/content/nggshik/study-cpp/homework/&TRAVIS_BUILD_NUMBER/CICppProject-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;
      deb_distribution=xenial;
      deb_component=main;
