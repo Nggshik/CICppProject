@@ -14,7 +14,7 @@ add_library(versionlib lib.cpp)
 add_executable(tests tests.cpp)
 
 set_target_properties(ci_cpp_project versionlib tests PROPERTIES
-    CXX_STANDARD 17
+    CXX_STANDARD 14
     CXX_STANDARD_REQUIRED ON 
     COMPILE_OPTIONS "-Wpedantic;-Wall;-Wextra"   
 )
